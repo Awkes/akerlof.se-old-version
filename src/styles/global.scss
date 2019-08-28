@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+* { box-sizing: border-box; }
+html {
+  height: 100%;
+  background-color: $cbm;
+  background-image: url('../images/home.jpg');
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+body { 
+  margin: 0;
+  color: $cm;
+  font-family: 'Open Sans';
+}
+h1,h2 { 
+  font-family: 'Righteous'; 
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+h1 { font-size: 2.5em; }
+h2 { 
+  font-size: 1.2em; 
+  color: $cs;
+}
+a { 
+  color: $cs; 
+  text-decoration: none;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #555;
+}

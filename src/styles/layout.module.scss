@@ -1,0 +1,32 @@
+@import 'variables.scss';
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+.logo { 
+  display: block;
+  width: 3em; 
+  filter: drop-shadow(0 1px 1px #000);
+  transition: transform 1s ease-in-out;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 5em 1em 0 1em;
+  &:nth-child(odd) { background-color: $cbm; }
+  &:nth-child(even) { background-color: $cbs; }
+  &:first-child { background-color: transparent; }
+  &::after { // Skapar horisontell linje i slutet av varje page
+    content: '';
+    height: 1em;
+    border-top: 1px solid $cs;
+    margin-top: 1em;
+  }
+}
+
