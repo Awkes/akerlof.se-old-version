@@ -1,11 +1,15 @@
 import React from "react";
 import Layout from "../components/layout";
+import Home from "../components/index/home";
+import Portfolio from "../components/index/portfolio";
+import Contact from "../components/index/contact";
 
 export default () => (
   <Layout>
-    <div id="home" style={{minHeight: '100vh'}}>hem</div>
-    <div id="aboutme" style={{minHeight: '100vh'}}>om mig</div>
-    <div id="skills" style={{minHeight: '100vh'}}>skills</div>
-    <div id="contact" style={{minHeight: '100vh'}}>kontakt</div>
+    <Home parentId="home" />
+    {/* <About parentId="about" /> */}
+    {/* <Skills parentId="skills" />> */}
+    <Portfolio parentId="portfolio" />
+    <Contact parentId="contact" />
   </Layout>
 );

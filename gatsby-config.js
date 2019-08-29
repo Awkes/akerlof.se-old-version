@@ -5,5 +5,12 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Andreas Åkerlöf - Frontendutvecklare - akerlof.se`,
+    url: `https://www.akerlof.se`,
+    description: `Andreas Åkerlöf's personliga utrymme på internet.
+                  Andreas är en frontendutvecklare som ständigt lär sig mer och mer. 
+                  På den här sidan presenterar Andreas sig själv och många av de alster han utvecklat.`
+  },
   plugins: [`gatsby-plugin-sass`],
 }

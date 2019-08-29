@@ -1,0 +1,40 @@
+@import 'variables.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.form {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(5,auto) fill 2fr;
+  gap: 0.5em;
+  min-height: max-content;
+}
+.msg {
+  display: flex;
+  justify-content: space-between;
+}
+.input,.btn,.textarea { 
+  border: 1px solid #fff; 
+  font-family: 'Open Sans';
+  font-size: 1em;
+  padding: 0.1em 0.5em;
+  margin: 0 0 0.5em 0
+}
+.input,.btn { height: 2.5em; }
+.textarea { 
+  height: 7em; 
+  resize: none;
+}
+.input,.textarea { background-color: #ccc; }
+.input:focus,.textarea:focus { outline-color: $cs; }
+button { 
+  background-color: $cs; 
+  color: $cm;
+}
+.btn:disabled { 
+  color: #ccc; 
+  background-color: #555;
+}

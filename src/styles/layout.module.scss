@@ -22,11 +22,10 @@
   &:nth-child(odd) { background-color: $cbm; }
   &:nth-child(even) { background-color: $cbs; }
   &:first-child { background-color: transparent; }
-  &::after { // Skapar horisontell linje i slutet av varje page
+  &::after {
     content: '';
     height: 1em;
     border-top: 1px solid $cs;
     margin-top: 1em;
   }
 }
-
