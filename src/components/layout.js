@@ -6,7 +6,7 @@ import styles from "../styles/layout.module.scss";
 
 export default({children}) => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{lang: 'sv'}}>
       <title>Andreas Åkerlöf - Frontendutvecklare - akerlof.se</title>
     </Helmet>
     <header className={styles.header}>
