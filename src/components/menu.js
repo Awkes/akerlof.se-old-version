@@ -31,7 +31,7 @@ export default() => (
     </label>
     <nav className={styles.nav}>
       <ul className={styles.navList}>
-        {/* <MenuLink url="#aboutme">Om mig</MenuLink> */}
+        <MenuLink url="#about">Om mig</MenuLink>
         {/* <MenuLink url="#skills">Skills</MenuLink> */}
         <MenuLink url="#portfolio">Portfolio</MenuLink>
         <MenuLink url="#contact">Kontakt</MenuLink>
