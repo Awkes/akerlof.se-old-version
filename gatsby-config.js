@@ -12,5 +12,13 @@ module.exports = {
                   Andreas är en frontendutvecklare som ständigt lär sig mer och mer. 
                   På den här sidan presenterar Andreas sig själv och många av de alster han utvecklat.`
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-146658929-1",
+      },
+    }
+  ],
 }
