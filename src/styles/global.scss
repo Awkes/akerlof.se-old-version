@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap');
+@import 'variables.scss';
+
+* { box-sizing: border-box; }
+html {
+  background-color: $cbm;
+  background-image: url('../images/home.jpg');
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+body { 
+  margin: 0;
+  color: $cm;
+  font-family: $fontRegular;
+}
+h1,h2 { 
+  font-family: $fontHeading; 
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+h1 { font-size: 2.5em; }
+h2 { 
+  font-size: 1.2em; 
+  color: $cs;
+}
+a { 
+  color: $cs; 
+  text-decoration: none;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #555;
+}
+
+.underlined { border-bottom: 1px solid $cs; }
+
+// Specifikt utseende för vissa sektioner som inte går att styra från dess moduler
+#home { 
+  justify-content: flex-end; 
+  &:after { content: none; }
+}
