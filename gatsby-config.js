@@ -13,6 +13,7 @@ module.exports = {
                   På den här sidan presenterar Andreas sig själv och många av de alster han utvecklat.`
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
