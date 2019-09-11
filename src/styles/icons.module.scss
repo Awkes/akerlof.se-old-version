@@ -1,0 +1,11 @@
+@import 'variables.scss';
+.icons { margin: 0; }
+.icon { 
+  display: inline-block;
+  width: 2em; 
+  margin: 0.5em;
+  img { display: block; }
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+}
+
