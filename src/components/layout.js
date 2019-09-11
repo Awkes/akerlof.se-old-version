@@ -1,22 +1,23 @@
 import React from "react";
-import {Helmet} from "react-helmet";
-import logo from "../images/logo.svg";
-import Menu, {closeMenu, animateLogo} from "../components/menu";
 import styles from "../styles/layout.module.scss";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default({children}) => (
   <>
-    <Helmet htmlAttributes={{lang: 'sv'}}>
-      <title>Andreas Åkerlöf - Frontendutvecklare - akerlof.se</title>
-    </Helmet>
-    <header className={styles.header}>
-      <a href="#home" onClick={closeMenu}>
-        <img src={logo} className={styles.logo} onLoad={animateLogo} id="logo" alt="Logo" />
-      </a>
-      <Menu />
-    </header>
+    <Header />
+
     <main>
-      {children.map((child,i) => <div key={i} id={child.props.parentId} className={styles.section}>{child}</div>)}
+      {children.map((child,i) => (
+        <div 
+          key={i} 
+          id={child.props.parentId} 
+          className={styles.section}
+          children={child}
+        />
+      ))}
     </main>
+
+    <Footer />
   </>
 );
