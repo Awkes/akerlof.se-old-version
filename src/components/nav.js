@@ -1,4 +1,5 @@
 import React from "react";
+import Icons from "../components/icons";
 import styles from "../styles/nav.module.scss";
 
 const NavLink = ({url, children}) => (
@@ -15,5 +16,6 @@ export default({onClick}) => (
       <NavLink url="#portfolio">Portfolio</NavLink>
       <NavLink url="#contact">Kontakt</NavLink>
     </ul>
+    <Icons />
   </nav>
 );
