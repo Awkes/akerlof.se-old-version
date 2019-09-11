@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "../../components/heading";
 import {Radar, Pie, Doughnut} from "react-chartjs-2";
 import styles from "../../styles/about.module.scss";
 
@@ -91,7 +92,7 @@ const chartWebHobbies = {
 
 export default() => (
   <div className={styles.content}>
-    <h1><span className={'underlined'}>Om mig</span></h1>
+    <Heading>Om mig</Heading>
     <div className={styles.charts}>
       <div>
         <Pie data={chartAndreas.data} width="100%" height="100%" options={chartAndreas.options} />

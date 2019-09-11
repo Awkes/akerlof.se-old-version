@@ -13,3 +13,13 @@
   filter: drop-shadow(0 1px 1px #000);
   transition: transform 1s ease-in-out;
 }
+
+
+@media(min-width: 768px) {
+  header {
+    height: 5em;
+    align-items: center;
+    background-color: $cbh;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+  }
+}

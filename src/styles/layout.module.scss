@@ -16,3 +16,7 @@
     margin-top: 1em;
   }
 }
+
+@media(min-width: 768px) {
+  .section { padding: 7em 3em 3em 3em; }
+}
