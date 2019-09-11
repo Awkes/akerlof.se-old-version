@@ -18,6 +18,6 @@ export default({children}) => (
       ))}
     </main>
 
-    {/* <Footer /> */}
+    <Footer />
   </>
 );

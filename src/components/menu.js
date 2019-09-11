@@ -10,8 +10,7 @@ export const animateLogo = () => {
 }
 
 export const closeMenu = (el) => {
-  console.log(el.target.tagName)
-  if (el.target.tagName == 'A' || 'IMG') {
+  if (el.target.tagName.toUpperCase() === 'A' || 'IMG') {
     document.querySelector('#burger').checked = false;
     animateLogo();
   } 

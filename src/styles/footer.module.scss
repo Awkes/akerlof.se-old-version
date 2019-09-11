@@ -1,0 +1,10 @@
+@import 'variables.scss';
+
+.footer { 
+  padding: 1em;
+  text-align: center;
+  text-shadow: 0 1px 1px #000;
+  background-color: $cbs;
+  nav { display: inline-block; }
+  &>* { padding-bottom: 1em; }
+}

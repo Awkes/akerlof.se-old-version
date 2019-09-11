@@ -2,7 +2,7 @@ import React from "react";
 import {Helmet} from "react-helmet";
 import logo from "../images/logo.svg";
 import Menu, {closeMenu, animateLogo} from "../components/menu";
-import styles from "../styles/layout.module.scss";
+import styles from "../styles/header.module.scss";
 
 export default({children}) => (
   <>

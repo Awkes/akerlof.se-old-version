@@ -8,7 +8,7 @@ const NavLink = ({url, children}) => (
 );
 
 export default({onClick}) => (
-  <nav className={styles.nav} onClick={onClick}>
+  <nav onClick={onClick}>
     <ul className={styles.navList}>
       <NavLink url="#about">Om mig</NavLink>
       {/* <NavLink url="#skills">Skills</NavLink> */}
