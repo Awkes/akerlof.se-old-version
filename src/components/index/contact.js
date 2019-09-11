@@ -1,9 +1,10 @@
 import React from "react";
+import Heading from "../../components/heading";
 import styles from "../../styles/contact.module.scss";
 
 export default() => (
   <div className={styles.content}>
-    <h1><span className={'underlined'}>Kontakt</span></h1>
+    <Heading>Kontakt</Heading>
     <form id="contactForm" className={styles.form}>
       <label htmlFor="contactName">Namn</label>
       <input className={styles.input} id="contactName" type="text" name="name" maxlength="100" />

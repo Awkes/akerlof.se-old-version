@@ -1,11 +1,18 @@
 @import 'variables.scss';
 
 .content {
- margin: 2em 1em;
- text-shadow: 0px 1px 1px #000;
+  margin: 2em 1em;
+  text-shadow: 0px 1px 1px #000;
 }
 .h1 { 
   margin-bottom: 0.1em; 
   word-spacing: 100vw;
 }
 .h2 { margin-bottom: 0.5em; }
+
+@media(min-width: 768px) {
+  .content { text-align: right; }
+  .content > h1 { font-size: 3.5em; }
+  .content > h2 { font-size: 1.8em; }
+  .content>div>a { width: 3em;}
+}

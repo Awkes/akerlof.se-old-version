@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "../../components/heading";
 import styles from "../../styles/portfolio.module.scss";
 import gitarrkungen from "../../images/gitarrkungen.jpg";
 import vardeokning from "../../images/vardeokning.jpg";
@@ -20,7 +21,7 @@ const PortfolioItem = ({title, url, img, children}) => (
 
 export default() => (
   <div className={styles.content}>
-    <h1><span className={'underlined'}>Portfolio</span></h1>
+    <Heading>Portfolio</Heading>
     <div className={styles.items}>
       <PortfolioItem title="Gitarrkungen" url="https://awkes.github.io/Gitarrkungen/" img={gitarrkungen}>
         Examinerande projektarbete i kursen JavaScript 2 på Nackademin. 

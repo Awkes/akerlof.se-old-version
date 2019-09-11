@@ -3,21 +3,24 @@ import styles from "../styles/layout.module.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-export default({children}) => (
-  <>
-    <Header />
+export default({children}) => {
+  if (!Array.isArray(children)) { children = [children]; }
+  return (
+    <>
+      <Header />
 
-    <main>
-      {children.map((child,i) => (
-        <div 
-          key={i} 
-          id={child.props.parentId} 
-          className={styles.section}
-          children={child}
-        />
-      ))}
-    </main>
+      <main>
+        {children.map((child,i) => (
+          <div 
+            key={i} 
+            id={child.props.parentId} 
+            className={styles.section}
+            children={child}
+          />
+        ))}
+      </main>
 
-    <Footer />
-  </>
-);
+      <Footer />
+    </>
+  );
+}

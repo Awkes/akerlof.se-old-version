@@ -12,3 +12,7 @@
   display: block;
   padding: 0.25em 0; 
 }
+
+@media(min-width: 768px) { 
+  .nav-link { padding: 0; }
+}

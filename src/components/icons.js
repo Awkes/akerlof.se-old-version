@@ -10,7 +10,7 @@ const IconLink = ({title, url, img}) => (
 );
 
 export default() => (
-  <div className={styles.icons}>
+  <div>
     <IconLink title="LinkedIn" url="https://www.linkedin.com/in/akerlof" img={linkedIn} />
     <IconLink title="GitHub" url="https://github.com/awkes" img={gitHub} />
    </div>

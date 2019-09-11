@@ -10,7 +10,7 @@ export default({children}) => (
       <title>Andreas Åkerlöf - Frontendutvecklare - akerlof.se</title>
     </Helmet>
     <header className={styles.header}>
-      <a href="#home" onClick={closeMenu}>
+      <a href="/#home" onClick={closeMenu}>
         <img src={logo} className={styles.logo} onLoad={animateLogo} id="logo" alt="Logo" />
       </a>
       <Menu />
