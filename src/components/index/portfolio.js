@@ -1,11 +1,12 @@
 import React from "react";
 import Heading from "../../components/heading";
 import styles from "../../styles/portfolio.module.scss";
-import gitarrkungen from "../../images/gitarrkungen.jpg";
-import vardeokning from "../../images/vardeokning.jpg";
-import liatracker from "../../images/liatracker.jpg";
-import code from "../../images/code.jpg";
-import htmlcss from "../../images/htmlcss.jpg";
+import gnr from "../../images/portfolio/gnr.jpg";
+import gitarrkungen from "../../images/portfolio/gitarrkungen.jpg";
+import vardeokning from "../../images/portfolio/vardeokning.jpg";
+import liatracker from "../../images/portfolio/liatracker.jpg";
+import code from "../../images/portfolio/code.jpg";
+import htmlcss from "../../images/portfolio/htmlcss.jpg";
 
 const PortfolioItem = ({title, url, img, children}) => (
   <div className={styles.item}>
@@ -23,6 +24,10 @@ export default() => (
   <div className={styles.content}>
     <Heading>Portfolio</Heading>
     <div className={styles.items}>
+      <PortfolioItem title="Guns N' Roses" url="https://jekyll-gnr.netlify.com" img={gnr}>
+        Projektarbete gjort tillsammans med en klasskompis i kursen JavaScript 3 på Nackademin.
+        Uppdraget var att skapa en band eller spelsida med hjälp av ramverket Jekyll.
+      </PortfolioItem>
       <PortfolioItem title="Gitarrkungen" url="https://awkes.github.io/Gitarrkungen/" img={gitarrkungen}>
         Examinerande projektarbete i kursen JavaScript 2 på Nackademin. 
         Vår uppgift var att skapa en webbshop med minst 10 produkter som ska kunna läggas till i varukorg och sedan "skickas" som en beställning.
