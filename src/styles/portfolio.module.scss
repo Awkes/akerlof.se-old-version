@@ -39,16 +39,9 @@
   margin: 1em 0;
 }
 .prev, .next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $cbm;
-  font-size: 1.1em;
-  width: 1.4em;
-  height: 1.4em;
-  background-color: $cm;
-  border-radius: 100%;
-  box-shadow: 0 1px 3px $cs;
+  color: $cm;
+  font-size: 2em;
+  text-shadow: 0 1px 3px $cs;
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
@@ -68,34 +61,24 @@
 .dot-active { background-color: $cs; }
 .img {
   max-width: 100%;
-  max-height: 35vh;
-
   border: 1px solid $cs;
 }
 
 @media(min-width: 768px) { 
-  .items {
+  .item {
     display: flex;
-    align-items: flex-start;
-  }
-  .item { 
-    position: static;
-    display: none;
-    margin: 1em;
-    width: 50%;
-  }
-  .item-active { order: 2; }
-  .item-next { order: 3; }
-  .item-active, .item-next { display: block; }
-  .item-prev, .item-next, .item-active { 
-    opacity: 1;
-    transform: translateX(0);
+    justify-content: space-between;
+    align-items: center;
+    &>a { 
+      width: 60%; 
+      margin-right: 2em;
+    }
+    &>div { width: 40%; }
   }
 }
-@media(min-width: 1024px) { 
-  .item { width: 33%; }
-  .item-prev {
-    display: block; 
-    order: 1; 
+
+@media(min-width: 1024px) {
+  .item {
+    &>a, &>div { width: 50%; }
   }
 }

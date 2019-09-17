@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/layout.module.scss";
+import {Helmet} from "react-helmet";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -7,6 +8,10 @@ export default({children}) => {
   if (!Array.isArray(children)) { children = [children]; }
   return (
     <>
+      <Helmet htmlAttributes={{lang: 'sv'}}>
+        <title>Andreas Åkerlöf - Frontendutvecklare - akerlof.se</title>
+      </Helmet>
+
       <Header />
 
       <main>
