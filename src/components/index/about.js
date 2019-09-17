@@ -95,13 +95,13 @@ export default() => (
     <Heading>Om mig</Heading>
     <div className={styles.charts}>
       <div>
-        <Pie data={chartAndreas.data} width="100%" height="100%" options={chartAndreas.options} />
+        <Pie data={chartAndreas.data} options={chartAndreas.options} />
       </div>
       <div>
-        <Radar data={chartHobbies.data} width="100%" height="100%" options={chartHobbies.options} />
+        <Radar data={chartHobbies.data} options={chartHobbies.options} />
       </div>
       <div>
-        <Doughnut data={chartWebHobbies.data} width="100%" height="100%" options={chartWebHobbies.options} />
+        <Doughnut data={chartWebHobbies.data} options={chartWebHobbies.options} />
       </div>
     </div>
   </div>

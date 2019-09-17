@@ -37,7 +37,8 @@ class PortfolioCarousel extends React.Component {
         url={item.node.url} 
         img={item.node.img} 
         children={item.node.text} 
-        className={status} 
+        className={status}
+        key={i}
       />;
     });
     return items;
@@ -47,8 +48,8 @@ class PortfolioCarousel extends React.Component {
     let dots = [];
     for (let i = 0; i < this.state.totalItems; i++) {
       dots.push(i === this.state.activeItem
-        ? <div className={styles.dot +' '+ styles.dotActive} />
-        : <div className={styles.dot} />
+        ? <div className={styles.dot +' '+ styles.dotActive} key={i} />
+        : <div className={styles.dot} key={i} />
       );
     }
     return <>{dots}</>;
