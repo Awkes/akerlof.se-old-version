@@ -1,0 +1,71 @@
+@import 'variables.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.icons { 
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1em;
+  padding-bottom: 1em;
+  align-content: center;
+  justify-items: center;
+  z-index: 100;
+}
+.icon { 
+  width: 3em; 
+  cursor: pointer;
+}
+
+.text {
+  position: fixed;
+  top: 9em;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  padding: 1em 2em;
+  background-color: #000;
+  border: 1px solid #555;
+  opacity: 0;
+  transform: scale(0,0);
+  transform-origin: center center;
+  transition: ease-in-out 0.2s;
+  &>img { margin: 1em 2em; }
+  &>div { text-align: center; }
+  box-shadow: 0 5px 5px #000;
+}
+.active { 
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+@media(min-width: 768px) {
+  .icons {
+    grid-template-columns: repeat(4,1fr);
+    gap: 3em;
+  }
+  .icon { width: 5em; }
+  .text {
+    display: flex;
+    align-items: center;
+    top: 10em;
+    bottom: 3em;
+    left: 3em;
+    right: 3em;
+    padding: 5em 1em;
+    &>img, &>div { 
+      width: 50%;
+      max-height: 100%;
+      margin: 2em;
+    }
+    &>div { text-align: left; }
+  }
+}
+
+@media(min-width: 992px) {
+  .icons { grid-template-columns: repeat(5,1fr); }
+  .icon { width: 5.5em; }
+}
