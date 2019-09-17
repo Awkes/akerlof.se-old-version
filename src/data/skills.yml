@@ -1,0 +1,63 @@
+- skill : HTML5
+  img   : images/skills/html5.svg
+  text  : Lorem ipsum...
+ 
+- skill : CSS3
+  img   : images/skills/css3.svg
+  text  : Lorem ipsum...
+ 
+- skill : SASS
+  img   : images/skills/sass.svg
+  text  : Lorem ipsum...
+ 
+- skill : JavaScript
+  img   : images/skills/javascript.svg
+  text  : Lorem ipsum...
+ 
+- skill : jQuery
+  img   : images/skills/jquery.svg
+  text  : Lorem ipsum...
+ 
+- skill : React
+  img   : images/skills/react.svg
+  text  : Lorem ipsum...
+ 
+- skill : Gatsby
+  img   : images/skills/gatsby.svg
+  text  : Lorem ipsum...
+
+- skill : Jekyll
+  img   : images/skills/jekyll.svg
+  text  : Lorem ipsum...
+ 
+- skill : PHP
+  img   : images/skills/php.svg
+  text  : Lorem ipsum...
+ 
+- skill : MySQL
+  img   : images/skills/mysql.svg
+  text  : Lorem ipsum...
+
+- skill : Adobe Photoshop
+  img   : images/skills/adobephotoshop.svg
+  text  : Lorem ipsum...
+
+- skill : Adobe Illustrator
+  img   : images/skills/adobeillustrator.svg
+  text  : Lorem ipsum...
+
+- skill : Adobe XD
+  img   : images/skills/adobexd.svg
+  text  : Lorem ipsum...
+
+- skill : Gimp
+  img   : images/skills/gimp.svg
+  text  : Lorem ipsum...
+
+- skill : Git
+  img   : images/skills/git.svg
+  text  : Lorem ipsum...
+
+- skill : GitHub
+  img   : images/skills/github.svg
+  text  : Lorem ipsum...
