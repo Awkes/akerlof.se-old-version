@@ -73,12 +73,12 @@
       width: 60%; 
       margin-right: 2em;
     }
-    &>p { width: 40%; }
+    &>div { width: 40%; }
   }
 }
 
 @media(min-width: 1024px) {
   .item {
-    &>a, &>p { width: 50%; }
+    &>a, &>div { width: 50%; }
   }
 }
