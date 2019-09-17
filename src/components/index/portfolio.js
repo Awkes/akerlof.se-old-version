@@ -51,9 +51,9 @@ const PortfolioItem = ({title, url, img, children, className}) => (
   <div className={styles.item+' '+(className || '')}>
     <a href={url} target="_blank" rel="noopener noreferrer">
       <img src={img} alt={title} className={styles.img} />
-      <h3>{title}</h3>
     </a>
     <p>
+      <h2><a href={url} target="_blank" rel="noopener noreferrer">{title}</a></h2>
       {children}
     </p>
   </div>
@@ -118,11 +118,11 @@ class PortfolioCarousel extends React.Component {
           </div>
         </div>
         <div className={styles.controls}>
-          <div className={styles.prev} onClick={() => this.changeItem('prev')}>🠈</div>
+          <div className={styles.prev} onClick={() => this.changeItem('prev')}>⏴</div>
           <div className={styles.indicator} ref={this.dots}>
             {this.renderDots()}
           </div>
-          <div className={styles.next} onClick={() => this.changeItem('next')}>🠊</div>
+          <div className={styles.next} onClick={() => this.changeItem('next')}>⏵</div>
         </div>
       </>
     );

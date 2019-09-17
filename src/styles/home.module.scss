@@ -8,7 +8,10 @@
   margin-bottom: 0.1em; 
   word-spacing: 100vw;
 }
-.h2 { margin-bottom: 0.5em; }
+.h2 { 
+  margin-bottom: 0.5em; 
+  color: $cs;
+}
 
 @media(min-width: 768px) {
   .content { text-align: right; }
