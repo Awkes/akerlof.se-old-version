@@ -23,6 +23,10 @@
   margin: auto;
   z-index: 100;
   transition: .5s;
+  &>div {
+    text-align: center;
+    margin: 1em 0;
+  }
 }
 .item-active {
   opacity: 1;
@@ -41,12 +45,12 @@
 .prev, .next {
   color: $cm;
   font-size: 2em;
-  text-shadow: 0 1px 3px $cs;
+  filter: drop-shadow(0 1px 1px $cs);
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 .prev:hover, .next:hover { 
-  box-shadow: none;
+  filter: none;
   transform: translateY(1px);
   top: 1px;
 }
@@ -73,7 +77,10 @@
       width: 60%; 
       margin-right: 2em;
     }
-    &>div { width: 40%; }
+    &>div { 
+      width: 40%; 
+      text-align: left;
+    }
   }
 }
 
