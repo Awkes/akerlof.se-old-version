@@ -8,7 +8,7 @@ export default() => (
   <div className={styles.content}>
     <Heading>Kontakt</Heading>
     <div className={styles.contact}>
-      <form name="Kontaktformulär - akerlof.se" method="POST" data-netlify="true" className={styles.form}>
+      <form name="contact" method="POST" data-netlify="true" className={styles.form}>
         <label htmlFor="contactName">Namn</label>
         <input className={styles.input} id="contactName" type="text" name="name" maxLength="100" />
         <label htmlFor="contactEmail">E-post</label>
