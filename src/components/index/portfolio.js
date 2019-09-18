@@ -1,7 +1,9 @@
 import React from "react";
 import Heading from "../../components/heading";
 import styles from "../../styles/portfolio.module.scss";
-import {StaticQuery,graphql} from "gatsby";
+import {useStaticQuery,graphql} from "gatsby";
+import arrowLeft from "../../images/arrow-left.svg";
+import arrowRight from "../../images/arrow-right.svg";
 
 const PortfolioItem = ({title, url, img, children, className}) => (
   <div className={styles.item+' '+(className || '')}>
@@ -33,10 +35,10 @@ class PortfolioCarousel extends React.Component {
       else if (i === this.state.nextItem) status = styles.itemNext;
       else if (i === this.state.prevItem) status = styles.itemPrev;
       return <PortfolioItem 
-        title={item.node.title} 
-        url={item.node.url} 
-        img={item.node.img} 
-        children={item.node.text} 
+        title={item.title} 
+        url={item.url} 
+        img={item.img} 
+        children={item.text} 
         className={status}
         key={i}
       />;
@@ -77,38 +79,35 @@ class PortfolioCarousel extends React.Component {
           </div>
         </div>
         <div className={styles.controls}>
-          <div className={styles.prev} onClick={() => this.changeItem('prev')}>⏴</div>
+          <img src={arrowLeft} alt="&lt;" className={styles.prev} onClick={() => this.changeItem('prev')} />
           <div className={styles.indicator} ref={this.dots}>
             {this.renderDots()}
           </div>
-          <div className={styles.next} onClick={() => this.changeItem('next')}>⏵</div>
+          <img src={arrowRight} alt="&gt;" className={styles.next} onClick={() => this.changeItem('next')} />
         </div>
       </>
     );
   }
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
+export default() => {
+  const data = useStaticQuery(
+    graphql`
       query {
         allPortfolioYaml {
-          edges {
-            node {
-              title
-              url
-              text
-              img
-            }
+          nodes {
+            title
+            url
+            text
+            img
           }
         }
       }`
-    }
-    render={data => (
-      <div className={styles.content}>
-        <Heading>Portfolio</Heading>
-        <PortfolioCarousel items={data.allPortfolioYaml.edges} />
-      </div>
-    )}
-  />
-);
+  );
+  return (
+    <div className={styles.content}>
+      <Heading>Portfolio</Heading>
+      <PortfolioCarousel items={data.allPortfolioYaml.nodes} />
+    </div>
+  );
+}

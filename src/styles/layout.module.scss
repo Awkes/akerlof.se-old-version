@@ -6,6 +6,7 @@
   justify-content: space-between;
   min-height: 100vh;
   padding: 5em 1em 0 1em;
+  overflow: hidden;
   &:nth-child(odd) { background-color: $cbm; }
   &:nth-child(even) { background-color: $cbs; }
   &:first-child { background-color: transparent; }

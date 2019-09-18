@@ -9,7 +9,7 @@
 }
 .wrapper {
   width: 100%;
-  overflow: hidden;
+  //overflow: hidden;
   flex: 1;
 }
 .items {
@@ -23,6 +23,10 @@
   margin: auto;
   z-index: 100;
   transition: .5s;
+  &>div {
+    text-align: center;
+    margin: 1em 0;
+  }
 }
 .item-active {
   opacity: 1;
@@ -41,12 +45,12 @@
 .prev, .next {
   color: $cm;
   font-size: 2em;
-  text-shadow: 0 1px 3px $cs;
+  filter: drop-shadow($lightSmallShadow);
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
 .prev:hover, .next:hover { 
-  box-shadow: none;
+  filter: none;
   transform: translateY(1px);
   top: 1px;
 }
@@ -61,7 +65,8 @@
 .dot-active { background-color: $cs; }
 .img {
   max-width: 100%;
-  border: 1px solid $cs;
+  border: $darkBorder;
+  box-shadow: $darkBigShadow;
 }
 
 @media(min-width: 768px) { 
@@ -73,7 +78,10 @@
       width: 60%; 
       margin-right: 2em;
     }
-    &>div { width: 40%; }
+    &>div { 
+      width: 40%; 
+      text-align: left;
+    }
   }
 }
 
