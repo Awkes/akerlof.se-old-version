@@ -9,6 +9,7 @@ export default() => (
     <Heading>Kontakt</Heading>
     <div className={styles.contact}>
       <form name="contact" method="POST" data-netlify="true" className={styles.form}>
+        <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="contactName">Namn</label>
         <input className={styles.input} id="contactName" type="text" name="name" maxLength="100" />
         <label htmlFor="contactEmail">E-post</label>
