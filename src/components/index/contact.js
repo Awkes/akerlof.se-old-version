@@ -18,7 +18,7 @@ export default() => (
           {/* <span id="contactCount">(0 / 1000)</span> */}
         </label>
         <textarea className={styles.textarea} id="contactMsg" name="msg" maxLength="1000" />
-        <button className={styles.btn} disabled>Skicka</button>
+        <button className={styles.btn}>Skicka</button>
       </form>
       <VisibilitySensor once>
         {({isVisible}) => (
