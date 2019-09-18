@@ -9,7 +9,7 @@
 }
 .wrapper {
   width: 100%;
-  overflow: hidden;
+  //overflow: hidden;
   flex: 1;
 }
 .items {
@@ -45,7 +45,7 @@
 .prev, .next {
   color: $cm;
   font-size: 2em;
-  filter: drop-shadow(0 1px 1px $cs);
+  filter: drop-shadow($lightSmallShadow);
   transition: ease-in-out 0.2s;
   cursor: pointer;
 }
@@ -65,7 +65,8 @@
 .dot-active { background-color: $cs; }
 .img {
   max-width: 100%;
-  border: 1px solid $cs;
+  border: $darkBorder;
+  box-shadow: $darkBigShadow;
 }
 
 @media(min-width: 768px) { 

@@ -8,3 +8,9 @@ $cbh: rgba(0, 0, 0, 0.5);
 // Fonts
 $fontHeading: 'Righteous', cursive;
 $fontRegular: 'Open Sans', sans-serif;
+
+// Shadows & borders
+$darkBigShadow: 0 5px 5px #000;
+$darkSmallShadow: 0 1px 1px #000;
+$lightSmallShadow: 0 1px 1px $cs;
+$darkBorder: 1px solid #555;
