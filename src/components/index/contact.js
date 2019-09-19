@@ -8,7 +8,8 @@ export default() => (
   <div className={styles.content}>
     <Heading>Kontakt</Heading>
     <div className={styles.contact}>
-      <form name="contact" method="POST" data-netlify="true" className={styles.form}>
+      <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/submit" className={styles.form}>
+        <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="contactName">Namn</label>
         <input className={styles.input} id="contactName" type="text" name="name" maxLength="100" />
