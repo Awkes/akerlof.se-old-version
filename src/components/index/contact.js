@@ -8,8 +8,9 @@ function FormErrors({errors}) {
   return (
     <ul className={styles.formErrors}>
       {Object.keys(errors).map((val, i) => {
-        if( errors[val] )
-          return <li key={i}>{errors[val]}</li>
+        return ( errors[val] )
+          ? <li key={i}>{errors[val]}</li>
+          : '';
       })}
     </ul>
   )
