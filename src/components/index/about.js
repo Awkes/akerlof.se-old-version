@@ -1,10 +1,24 @@
 import React from "react";
+import {useStaticQuery, graphql} from "gatsby";
 import Heading from "../../components/heading";
 import styles from "../../styles/about.module.scss";
 
-export default() => (
-  <div className={styles.content}>
-    <Heading>Om mig</Heading>
-    
-  </div>
-);
+export default() => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        allAboutYaml {
+          nodes {
+            text
+          }
+        }
+      }
+    `
+  );
+  return (
+    <div className={styles.content}>
+      <Heading>Om mig</Heading>
+      {data.allAboutYaml.nodes.map(p => <p>{p.text}</p>)}
+    </div>
+  );
+}

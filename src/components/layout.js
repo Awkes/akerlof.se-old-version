@@ -19,7 +19,7 @@ export default({children}) => {
           <div 
             key={i} 
             id={child.props.parentId} 
-            className={styles.section}
+            className={styles.section +' '+ (child.props.parentClassName || '')}
             children={child}
           />
         ))}

@@ -5,11 +5,12 @@ import Skills from "../components/index/skills";
 import About from "../components/index/about";
 import Portfolio from "../components/index/portfolio";
 import Contact from "../components/index/contact";
+import stylesAbout from "../styles/about.module.scss";
 
 export default () => (
   <Layout>
     <Home parentId="home" />
-    <About parentId="about" />
+    <About parentId="about" parentClassName={stylesAbout.parent} />
     <Skills parentId="skills" />
     <Portfolio parentId="portfolio" />
     <Contact parentId="contact" />
