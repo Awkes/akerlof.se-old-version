@@ -38,6 +38,3 @@ hr {
 }
 
 .underlined { border-bottom: 1px solid $cs; }
-
-// Specifikt utseende för vissa sektioner som inte går att styra från dess moduler
-#home:after, #thankyou:after { content: none; }
