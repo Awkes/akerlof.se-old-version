@@ -3,5 +3,20 @@
 .content {
   display: flex;
   flex-direction: column;
-  flex: 1;
+}
+
+@media(min-width: 768px) {
+  .parent {
+    justify-content: flex-end;
+    background-image: url('../images/andreas.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 75vw;
+   }
+  .content,.parent::after { width: 35vw; }
+}
+
+@media(min-width: 992px) {
+  .parent { background-size: 65vw; }
+  .content,.parent::after { width: 45vw; }
 }
