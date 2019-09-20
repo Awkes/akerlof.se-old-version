@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "../../components/heading";
 import styles from "../../styles/portfolio.module.scss";
 import {useStaticQuery,graphql} from "gatsby";
+import {Swipeable} from "react-swipeable";
 import arrowLeft from "../../images/arrow-left.svg";
 import arrowRight from "../../images/arrow-right.svg";
 
@@ -74,9 +75,11 @@ class PortfolioCarousel extends React.Component {
     return (
       <>
         <div className={styles.wrapper}>
-          <div className={styles.items} ref={this.items}>
-            {this.renderPortfolioItems()}
-          </div>
+          <Swipeable onSwipedLeft={() => this.changeItem('prev')} onSwipedRight={() => this.changeItem('next')}>
+            <div className={styles.items} ref={this.items}>
+              {this.renderPortfolioItems()}
+            </div>
+          </Swipeable>
         </div>
         <div className={styles.controls}>
           <img src={arrowLeft} alt="&lt;" className={styles.prev} onClick={() => this.changeItem('prev')} />
