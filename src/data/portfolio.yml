@@ -3,6 +3,11 @@
   img   : /images/portfolio/gnr.jpg
   text  : Projektarbete gjort tillsammans med en klasskompis i kursen JavaScript 3 på Nackademin. Uppdraget var att skapa en band eller spelsida med hjälp av ramverket Jekyll.
 
+- title : MAD-Journal
+  url   : http://mad-journal.000webhostapp.com/
+  img   : /images/portfolio/madjournal.jpg
+  text  : Examinerande projektarbete i kursen CMS, Backend och Databaser på Nackademin. Vi skulle skapa en single-page journal med JavaScript som kopplades till ett API som vi byggde med hjälp av ramverket Slim, PHP och MySQL. Projektet gjordes med två klasskamrater.
+
 - title : Gitarrkungen
   url   : https://awkes.github.io/Gitarrkungen
   img   : /images/portfolio/gitarrkungen.jpg
