@@ -75,7 +75,7 @@ class PortfolioCarousel extends React.Component {
     return (
       <>
         <div className={styles.wrapper}>
-          <Swipeable onSwipedLeft={() => this.changeItem('prev')} onSwipedRight={() => this.changeItem('next')}>
+          <Swipeable onSwipedLeft={() => this.changeItem('next')} onSwipedRight={() => this.changeItem('prev')}>
             <div className={styles.items} ref={this.items}>
               {this.renderPortfolioItems()}
             </div>
