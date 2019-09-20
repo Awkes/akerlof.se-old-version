@@ -16,7 +16,7 @@ export default({onClick}) => (
       <NavLink url="/#skills">Skills</NavLink>
       <NavLink url="/#portfolio">Portfolio</NavLink>
       <NavLink url="/#contact">Kontakt</NavLink>
-      <NavLink url="/blog">Blogg</NavLink>
+      {/* <NavLink url="/blog">Blogg</NavLink> */}
     </ul>
     <Icons />
   </nav>
