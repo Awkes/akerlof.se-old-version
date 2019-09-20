@@ -1,0 +1,8 @@
+@import 'variables.scss';
+
+.heading { 
+  transition: ease-in-out 1s;
+  transform: scale(1,-1);;
+}
+.active { transform: scale(1, 1); }
+.underlined { border-bottom: 1px solid $cs; }
