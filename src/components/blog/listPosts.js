@@ -6,13 +6,24 @@ export default() => {
   const data = useStaticQuery(
     graphql`
       query {
-        
+        allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/posts/"}}) {
+          nodes {
+            frontmatter {
+              date
+              title
+              img
+            }
+            excerpt
+          }
+        }
       }
     `
   );
   return (
     <div className={styles.content}>
-      {/* {data.posts.nodes.map(p => <p>{p.text}</p>)} */}
+      {data.allMarkdownRemark.nodes.map(post => 
+        <p> {post}</p>
+      )}
     </div>
   );
 }

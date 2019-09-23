@@ -4,13 +4,13 @@ import Heading from "../../components/heading";
 import styles from "../../styles/post.module.scss";
 
 export default() => {
-  const data = useStaticQuery(
-    graphql`
-      query {
+  // const data = useStaticQuery(
+  //   graphql`
+  //     query {
         
-      }
-    `
-  );
+  //     }
+  //   `
+  // );
   return (
     <div className={styles.content}>
       <Heading>Post</Heading>
