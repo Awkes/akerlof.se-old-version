@@ -1,0 +1,35 @@
+@import 'variables.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.post { 
+  align-self: center;
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: $darkBorder;
+  border-top: $darkBorder;
+  color: $cm;
+  &,&:hover { text-decoration: none; }
+  &:hover { background-color: $cbm; }
+}
+.img,.no-img { 
+  max-width: 100%;
+  margin: 1em 0;
+}
+.img { border: $darkBorder; }
+.date { color: $cDate; }
+
+@media(min-width: 768px) {
+  .post { 
+    display: flex; 
+    padding: 0;
+  }
+  .img,.no-img { 
+    width: 10em; 
+    margin: 1em 0;
+  }
+  .no-img { min-width: 10em; }
+  .text { padding: 1em; }
+}

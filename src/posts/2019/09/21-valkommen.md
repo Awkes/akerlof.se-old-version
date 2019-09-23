@@ -1,7 +1,7 @@
 ---
 title: "Välkommen till min blogg"
-date: "2019-09-24"
-img:  "../static/images/blog/typewriter.jpg"
+date: "2019-09-21"
+img:  "/images/blog/typewriter.jpg"
 ---
 
 Hej och välkommen till min blogg!
