@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post { 
+  align-self: center;
+  margin: 1em 0;
+  padding-bottom: 1em;
+  border-bottom: $darkBorder;
+  border-top: $darkBorder;
+  color: $cm;
+  &,&:hover { text-decoration: none; }
+  &:hover { background-color: $cbm; }
+}
+.img { 
+  max-width: 100%;
+  margin: 1em 0;
+  border: $darkBorder; 
+}
+.date { color: $cDate; }
+
+@media(min-width: 768px) {
+  .post { 
+    display: flex; 
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .img-div { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 11em;
+  }
+  .img {
+    max-width: 10em; 
+    margin: 1em;
+    max-height: 6em;
+  }
+  .text { padding: 1em; }
+}

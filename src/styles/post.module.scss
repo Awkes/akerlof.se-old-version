@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+.parent { 
+  opacity: 0;
+  background-color: $cbm !important;
+  transition: ease-in-out;
+  animation: fade-in 1s forwards;
+  animation-iteration-count: 1;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.post { max-width: 1200px; align-self: center; }
+.img {
+  border: $darkBorder;
+  max-width: 100%;
+}
+.date { 
+  font-family: $fontHeading;
+  font-size: 1.2em;
+  color: $cDate;
+  margin: 0 0 2em 0;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .img { 
+    float: left; 
+    width: 50%;
+    margin: 0 2em 2em 0;
+  }
+  .txt { p:first-child { margin-top: 0; } }
+}
