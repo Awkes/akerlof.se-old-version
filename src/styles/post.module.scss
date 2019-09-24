@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
 }
+.post { max-width: 1200px; align-self: center; }
 .img {
   border: $darkBorder;
   max-width: 100%;
@@ -24,6 +25,7 @@
   font-size: 1.2em;
   color: $cDate;
   margin: 0 0 2em 0;
+  text-align: center;
 }
 
 @media(min-width: 768px) {
@@ -32,4 +34,5 @@
     width: 50%;
     margin: 0 2em 2em 0;
   }
+  .txt { p:first-child { margin-top: 0; } }
 }

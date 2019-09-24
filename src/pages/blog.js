@@ -18,12 +18,14 @@ export default ({data}) => (
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        date
-        title
-        img
+    allMarkdownRemark(filter: {fields: {slug: { eq: $slug}}}, limit: 1) {
+      nodes {
+        frontmatter {
+          date
+          img
+          title
+        }
+        html
       }
     }
   }

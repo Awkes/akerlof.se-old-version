@@ -1,5 +1,5 @@
 ---
-title: "Välkommen till min blogg"
+title: "Välkommen!"
 date: "2019-09-24"
 img:  "/images/blog/typewriter.jpg"
 ---

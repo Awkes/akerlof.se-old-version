@@ -14,22 +14,30 @@
   &,&:hover { text-decoration: none; }
   &:hover { background-color: $cbm; }
 }
-.img,.no-img { 
+.img { 
   max-width: 100%;
   margin: 1em 0;
+  border: $darkBorder; 
 }
-.img { border: $darkBorder; }
 .date { color: $cDate; }
 
 @media(min-width: 768px) {
   .post { 
     display: flex; 
     padding: 0;
+    width: 100%;
+    max-width: 1200px;
   }
-  .img,.no-img { 
-    width: 10em; 
-    margin: 1em 0;
+  .img-div { 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 10em;
   }
-  .no-img { min-width: 10em; }
+  .img {
+    max-width: 10em; 
+    margin: 1em;
+    max-height: 6em;
+  }
   .text { padding: 1em; }
 }

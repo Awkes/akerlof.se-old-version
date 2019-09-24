@@ -8,28 +8,33 @@ export default({postData}) => {
   const post = postData || useStaticQuery( 
     graphql`
       query {
-        markdownRemark {
-          html
-          frontmatter {
-            date
-            title
-            img
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }, 
+          limit: 1
+        ) {
+          nodes {
+            frontmatter {
+              date
+              img
+              title
+            }
+            html
           }
         }
       }
     `
   );
-  const title = post.markdownRemark.frontmatter.title;
-  const date = post.markdownRemark.frontmatter.date;
-  const img = post.markdownRemark.frontmatter.img;
-  const children = post.markdownRemark.html;
+  const title = post.allMarkdownRemark.nodes[0].frontmatter.title;
+  const date = post.allMarkdownRemark.nodes[0].frontmatter.date;
+  const img = post.allMarkdownRemark.nodes[0].frontmatter.img;
+  const children = post.allMarkdownRemark.nodes[0].html;
   return (
     <div className={styles.content}>
       <Heading>{title}</Heading>
       <div className={styles.date}>{date}</div>
-      <div>
+      <div className={styles.post}>
         {img ? <img src={img} alt={title} className={styles.img} /> : ''}
-        {children }
+        <span className={styles.txt} dangerouslySetInnerHTML={{__html: children}} />
       </div>
     </div>
   );

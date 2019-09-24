@@ -27,11 +27,15 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  .then(result => result.data.allMarkdownRemark.nodes.forEach(({fields}) => { 
-    createPage({
-      path: fields.slug,
-      component: path.resolve('./src/pages/blog.js'),
-      context: { slug: fields.slug }
-    });
-  }));
+  .then(result => {
+    if (result.data) {
+      result.data.allMarkdownRemark.nodes.forEach(({fields}) => { 
+        createPage({
+          path: fields.slug,
+          component: path.resolve('./src/pages/blog.js'),
+          context: { slug: fields.slug }
+        });
+      });
+    }
+  });
 }

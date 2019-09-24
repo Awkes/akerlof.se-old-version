@@ -10,7 +10,7 @@ export default() => {
         allMarkdownRemark(
             filter: {fileAbsolutePath: {regex: "/posts/"}},
             sort: { fields: [frontmatter___date], order: DESC }
-          ) {
+        ) {
           nodes {
             frontmatter {
               date
@@ -31,11 +31,13 @@ export default() => {
       <Heading>Arkiv</Heading>
       {data.allMarkdownRemark.nodes.map((post, i) => 
         <Link to={post.fields.slug} key={i} className={styles.post}>
-          {
-            post.frontmatter.img
+          <div className={styles.imgDiv}>
+            {
+              post.frontmatter.img
               ? <img src={post.frontmatter.img} alt={post.frontmatter.title} className={styles.img} />
-              : <div className={styles.noImg} />
-          }
+              : ''
+            }
+          </div>
           <div className={styles.text}>
             <h2>
               {post.frontmatter.title}
