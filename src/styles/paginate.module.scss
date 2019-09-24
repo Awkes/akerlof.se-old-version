@@ -1,0 +1,23 @@
+@import 'variables.scss';
+
+.controls { 
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+}
+.prev, .next {
+  color: $cm;
+  font-size: 2em;
+  filter: drop-shadow($lightSmallShadow);
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.prev { margin-right: 1em; }
+.next { margin-left: 1em; }
+.prev:hover, .next:hover { 
+  filter: none;
+  transform: translateY(1px);
+  top: 1px;
+}
+.numbers { word-break: break-all; }
+.number { padding: 0.5em; }

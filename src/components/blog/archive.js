@@ -1,6 +1,7 @@
 import React from "react";
 import {useStaticQuery, graphql, Link} from "gatsby";
 import Heading from "../../components/heading";
+import Paginate from "../../components/paginate"
 import styles from "../../styles/archive.module.scss";
 
 export default() => {
@@ -29,25 +30,27 @@ export default() => {
   return (
     <div className={styles.content}>
       <Heading>Arkiv</Heading>
-      {data.allMarkdownRemark.nodes.map((post, i) => 
-        <Link to={post.fields.slug} key={i} className={styles.post}>
-          <div className={styles.imgDiv}>
-            {
-              post.frontmatter.img
-              ? <img src={post.frontmatter.img} alt={post.frontmatter.title} className={styles.img} />
-              : ''
-            }
-          </div>
-          <div className={styles.text}>
-            <h2>
-              {post.frontmatter.title}
-              <br />
-              <span className={styles.date}>{post.frontmatter.date}</span>
-            </h2>
-            {post.excerpt}
-          </div>
-        </Link>
-      )}
+      <Paginate>
+        {data.allMarkdownRemark.nodes.map((post, i) => 
+          <Link to={post.fields.slug} key={i} className={styles.post}>
+            <div className={styles.imgDiv}>
+              {
+                post.frontmatter.img
+                ? <img src={post.frontmatter.img} alt={post.frontmatter.title} className={styles.img} />
+                : ''
+              }
+            </div>
+            <div className={styles.text}>
+              <h2>
+                {post.frontmatter.title}
+                <br />
+                <span className={styles.date}>{post.frontmatter.date}</span>
+              </h2>
+              {post.excerpt}
+            </div>
+          </Link>
+        )}
+      </Paginate>
     </div>
   );
 }
