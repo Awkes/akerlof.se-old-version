@@ -9,7 +9,7 @@ export default({postData}) => {
     graphql`
       query {
         allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }, 
+          sort: { fields: [frontmatter___date], order: ASC }, 
           limit: 1
         ) {
           nodes {
