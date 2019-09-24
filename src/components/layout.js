@@ -19,7 +19,6 @@ export default({children}) => {
       }
     `
   );
-  console.log(data)
   if (!Array.isArray(children)) { children = [children]; }
   return (
     <>

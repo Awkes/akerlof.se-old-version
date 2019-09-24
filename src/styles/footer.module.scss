@@ -4,7 +4,10 @@
   padding: 1em 1em 2em 1em;
   text-align: center;
   background-color: $cbs;
-  nav { display: inline-block; }
+  nav { 
+    display: inline-block; 
+    &>div { margin: 1em; }
+  }
 }
 
 @media(min-width: 768px) {

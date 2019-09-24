@@ -1,71 +1,70 @@
 - skill : HTML5
   img   : images/skills/html5.svg
-  text  : Mina erfarenheter i HTML sträcker sig så långt tillbaka som sent 90-tal.
-          Det var på den tiden jag började experimentera med att göra egna hemsidor.
+  text  : My experience with HTML started as far back as the late nineties. 
+          It was back in those days I started to experiment with my own web pages.
  
 - skill : CSS3
   img   : images/skills/css3.svg
-  text  : Mina erfarenheter i CSS sträcker sig, precis som HTML tillbaka till sent 90-tal.
+  text  : My experience with CSS started around the same time as i started with HTML, in the late nineties.
 
 - skill : SASS
   img   : images/skills/sass.svg
-  text  : Jag har erfarenhet av att skriva CSS med hjälp av SASS, det är ett verktyg jag använder
-          mig av i många av mina projekt.
- 
+  text  : I have experience in writing CSS with the help of the preprocessor SASS. 
+          It's a tool I use in a lot of my own projects.
+  
 - skill : JavaScript
   img   : images/skills/javascript.svg
-  text  : Mina JavaScript-kunskaper utvecklas mer och mer på daglig basis.
- 
+  text  : My JavaScript skills is pretty good. I'm always learning new stuff and I'm getting better and better on a daily basis. 
+   
 - skill : jQuery
   img   : images/skills/jquery.svg
-  text  : Jag har använt mig av jQuery några gånger, och har full förståelse för hur det fungerar.
- 
+  text  : I've been using jQuery in some of my projects and have a pretty good understanding of it.
+   
 - skill : React
   img   : images/skills/react.svg
-  text  : Jag har nyligen börjat sätta mig in i React och planerar att lära mig det bra.
+  text  : Recently i've started to learn React. The plan is to be a great React developer in the future.
  
 - skill : Gatsby
   img   : images/skills/gatsby.svg
-  text  : Jag använder Gatsby på den här sidan, dels för att lära mig Gatsby och för att lära mig
-          React.
-
+  text  : This site is built with Gatsby. I built it with Gatsby to both learn the Gatsby framework
+          and to learn more React.
+  
 - skill : Jekyll
   img   : images/skills/jekyll.svg
-  text  : Jag har lite erfarenhet av att använda ramverket Jekyll.
+  text  : I have some experience in using the framework Jekyll.
+  
  
 - skill : PHP
   img   : images/skills/php.svg
-  text  : Jag höll på mycket med PHP för si så där 10-15 år sedan, men har även hållit på lite
-          grann med det under senare år.
+  text  : I did a lot of coding with PHP for about 10-15 years ago. 
+          Nowdays not that much, but I use it from time to time.
  
 - skill : MySQL
   img   : images/skills/mysql.svg
-  text  : Jag har erfarenhet att använda mig av MySQL som databas.
-
+  text  : I have experience in using MySQL and similar databses.
+  
 - skill : Adobe Photoshop
   img   : images/skills/adobephotoshop.svg
-  text  : Adobe Photoshop har jag använt i 20+ år och skulle våga påstå att jag är
-          rätt duktig på det.
+  text  : I've been using Adobe Photoshop for over twenty years, so I would call my self
+          pretty experienced with it.
 
 - skill : Adobe Illustrator
   img   : images/skills/adobeillustrator.svg
-  text  : Adobe Illustrator är jag inte extremt insatt i, men kan ta mig runt och klarar
-          av enklare saker.
+  text  : I know how to handle Adobe Illustrator. Not as good as Photoshop though.
 
 - skill : Adobe XD
   img   : images/skills/adobexd.svg
-  text  : Jag har användt Adobe XD för att göra mockups för en del av mina projekt.
+  text  : In some of my projects I've been using Adobe XD to make mockups.
 
 - skill : Gimp
   img   : images/skills/gimp.svg
-  text  : Då jag till och från kört Linux som operativsystem, så har jag självklart erfarenhet
-          av att använda denna motsvarighet till Photoshop.
+  text  : Since I'm a bit geeky and I've been using Linux as my primary operating system from time to time,
+          I have experience in using this Photoshop equivalent.
 
 - skill : Git
   img   : images/skills/git.svg
-  text  : Git är något jag börjat använda sedan jag påbörjade mina studier till frontendutvecklare.
+  text  : I started using Git as soon as I started to study frontend developement and I'm using it on a daily basis.
 
 - skill : GitHub
   img   : images/skills/github.svg
-  text  : Git fungerar så klart väldigt smidigt ihop med GitHub, så det är också något jag använder
-          mig utav.
+  text  : Git works best with GitHub, so of course I'm experienced in using GitHub as well.

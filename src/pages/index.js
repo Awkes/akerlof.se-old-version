@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Home from "../components/index/home";
 import Skills from "../components/index/skills";
 import About from "../components/index/about";
-import Portfolio from "../components/index/portfolio";
+import Projects from "../components/index/projects";
 import Contact from "../components/index/contact";
 import stylesHome from "../styles/home.module.scss";
 import stylesAbout from "../styles/about.module.scss";
@@ -13,7 +13,7 @@ export default () => (
     <Home parentId="home" parentClassName={stylesHome.parent} />
     <About parentId="about" parentClassName={stylesAbout.parent} />
     <Skills parentId="skills" />
-    <Portfolio parentId="portfolio" />
+    <Projects parentId="projects" />
     <Contact parentId="contact" />
   </Layout>
 );

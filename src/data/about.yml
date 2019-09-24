@@ -1,14 +1,15 @@
-- text : 'Hej, mitt namn är Andreas och jag älskar webbutveckling!'
+- text : "Hi, my name is Andreas and I'm a passionate frontend developer."
 
-- text : 'Jag tröttnade på att arbeta i läkemedelsindustrin, så jag sadlade
-          om och började plugga frontendutveckling på Nackademin för
-          att kunna göra karriär inom webbutveckling.'
+- text : "After some years working as an operator in the pharmaceutical industry, I got bored and needed a change. 
+          I had the need to do something more creative and fun, wich after some thinking led me on to web development.
+          Therefore I started to study frontend development at Nackademin (Vocational Education)."
 
-- text : 'Mitt intresse för utveckling började redan i tonåren, och sedan dess
-          har jag pysslat med allt från HTML, CSS till JavaScript och PHP. Under åren
-          har jag även testat på lite andra programmeringsspråk så som mIRC-scripting, 
-          Visual Basic, Pascal och C#.'
-
-- text : 'På min fritid blir det förutom webbutveckling en hel del musik, jag lyssnar,
-          och besöker en hel del konserter och festivaler. Utöver det så älskar jag
-          att resa, pyssla och spela tv-spel.'
+- text : "My interest in web development started back when i was a teenager, 
+          and since then I've been trying a little bit of this, and a little bit of that.
+          I've been doing everything from HTML, CSS to JavaScript and PHP. 
+          During the years I've also tried some other programming languages,
+          for example mIRC-scripting, Visual Basic and C#.
+          "
+- text : "In my free time, when I'm not building stuff for the web, there's a lot of time spent on music,
+          I listen, and I go to lots of gigs and visit festivals.
+          Apart from that I love traveling, crafting and video games."

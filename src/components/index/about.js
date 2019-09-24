@@ -17,7 +17,7 @@ export default() => {
   );
   return (
     <div className={styles.content}>
-      <Heading>Om mig</Heading>
+      <Heading>Andreas</Heading>
       {data.allAboutYaml.nodes.map(p => <p>{p.text}</p>)}
     </div>
   );

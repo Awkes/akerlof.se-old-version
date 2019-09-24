@@ -1,0 +1,39 @@
+- title : Guns N' Roses
+  url   : https://jekyll-gnr.netlify.com
+  img   : /images/portfolio/gnr.jpg
+  text  : A project that I made with two classmates in the course JavaScript 3 at Nackademin. The mission was to create a band or a game page using Jekyll as framework.
+
+- title : MAD-Journal
+  url   : http://mad-journal.000webhostapp.com/
+  img   : /images/portfolio/madjournal.jpg
+  text  : Examining project in the course CMS, Backend och Databases at Nackademin. We were suppose to create a single page journal with JavaScript that was connected to an API that we built with the framework Slim. PHP and MySQL. I did this project with two classmates.
+
+- title : Gitarrkungen
+  url   : https://awkes.github.io/Gitarrkungen
+  img   : /images/portfolio/gitarrkungen.jpg
+  text  : Examining project in the course JavaScript 2 at Nackademin. We were supposed to create a webshop with at least 10 products that you should be able to add to a cart and then "order". The project uses Bootstrap, jQuery och Web Storage API. I did this project together with a classmate.
+
+- title : Värdeökning
+  url   : https://awkes.github.io/Frontendprojekt-Projekt-2
+  img   : /images/portfolio/vardeokning.jpg
+  text  : Project that i made during the course Frontend Projects at Nackademin. The mission was to create a web app for the fictive company Bostadskollen. The app calculates estimated value increase on a residence for the upcoming 5 years. It's limited to three areas and the calculations should not be trusted, cause they don't resemble real life.
+
+- title : LIA-tracker
+  url   : http://akerlof.esy.es/lia-tracker
+  img   : /images/portfolio/liatracker.jpg
+  text  : This app i put together to keep track of internships I've applied for. And at the same time practice some JavaScripting. There's no database involved and it's built using Web Storage API. It's possible to import and export the list as CSV to be able to use the app in other browsers or places.
+
+- title : "[Code]"
+  url   : https://lidmyr93.github.io/Projekt-1/Webbsida
+  img   : /images/portfolio/code.jpg
+  text  : Group project made in the course Frontend Projects at Nackademin. It's made together with tre classmates. Our mission was to build a homepage for a consulting company that offers frontend services.
+
+- title : akerlof.se
+  url   : http://akerlof.esy.es/cv
+  img   : /images/portfolio/akerlofsecv.jpg
+  text  : This is my old site / CV / portfolio. I designed it and coded it as an exam in the course Graphic Tools at Nackademin.
+
+- title : HTML & CSS Historik
+  url   : https://awkes.github.io/HTML-och-CSS-historik
+  img   : /images/portfolio/htmlcss.jpg
+  text  : Examinating project in the course HTML and CSS at Nackademin. This site is built together with two classmates from Nackademin.

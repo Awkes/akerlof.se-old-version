@@ -28,9 +28,9 @@ class Form extends React.Component {
       error : { name: false, email : false, msg : false }
     };
     this.errorMsgs = { 
-      name: 'Ditt namn måste innehålla minst 3 tecken.', 
-      email: 'Skriv in en giltig e-postadress.', 
-      msg : 'Ditt meddelande måste vara mellan 20 - 1000 tecken.' 
+      name: 'Your name must contain at least 3 characters.', 
+      email: 'Enter a valid e-mail address.', 
+      msg : 'Your message must be between 20 - 1000 characters.' 
     };
   }
   handleUserInput(e) {
@@ -72,7 +72,7 @@ class Form extends React.Component {
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/submit" className={styles.form}>
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="contact" />
-        <label htmlFor="contactName">Namn</label>
+        <label htmlFor="contactName">Name</label>
         <input 
           className={styles.input} 
           value={this.state.name} 
@@ -82,7 +82,7 @@ class Form extends React.Component {
           name="name" 
           maxLength="100" 
         />
-        <label htmlFor="contactEmail">E-post</label>
+        <label htmlFor="contactEmail">E-mail</label>
         <input 
           className={styles.input} 
           value={this.state.email} 
@@ -92,10 +92,10 @@ class Form extends React.Component {
           name="email" 
           maxLength="100" 
         />
-        <label htmlFor="contactMsg" className={styles.msg}>
-          <span>Meddelande</span>
+        <div className={styles.msg}>
+          <label htmlFor="contactMsg">Message</label>
           <span>({this.state.msgCharCount} / 1000)</span>
-        </label>
+        </div>
         <textarea 
           className={styles.textarea} 
           value={this.state.msg} 

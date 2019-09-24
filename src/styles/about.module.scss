@@ -3,6 +3,7 @@
 .content {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 @media(min-width: 768px) {
@@ -14,6 +15,7 @@
     background-size: 60vw;
    }
   .content,.parent::after { width: 35vw; }
+  .content,.content>h1 { text-align: left; }
 }
 
 @media(min-width: 992px) {

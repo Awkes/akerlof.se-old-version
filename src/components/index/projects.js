@@ -1,12 +1,12 @@
 import React from "react";
 import Heading from "../../components/heading";
-import styles from "../../styles/portfolio.module.scss";
+import styles from "../../styles/projects.module.scss";
 import {useStaticQuery,graphql} from "gatsby";
 import {Swipeable} from "react-swipeable";
 import arrowLeft from "../../images/arrow-left.svg";
 import arrowRight from "../../images/arrow-right.svg";
 
-const PortfolioItem = ({title, url, img, children, className}) => (
+const Project = ({title, url, img, children, className}) => (
   <div className={styles.item+' '+(className || '')}>
     <a href={url} target="_blank" rel="noopener noreferrer">
       <img src={img} alt={title} className={styles.img} />
@@ -18,7 +18,7 @@ const PortfolioItem = ({title, url, img, children, className}) => (
   </div>
 );
 
-class PortfolioCarousel extends React.Component {
+class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -28,14 +28,14 @@ class PortfolioCarousel extends React.Component {
       nextItem: 1,
     };
   }
-  renderPortfolioItems() {
+  renderProjects() {
     // Get items, create item components and set CSS-classes
     const items = this.props.items.map((item, i) => {
       let status = '';
       if (i === this.state.activeItem) status = styles.itemActive;
       else if (i === this.state.nextItem) status = styles.itemNext;
       else if (i === this.state.prevItem) status = styles.itemPrev;
-      return <PortfolioItem 
+      return <Project 
         title={item.title} 
         url={item.url} 
         img={item.img} 
@@ -77,7 +77,7 @@ class PortfolioCarousel extends React.Component {
         <div className={styles.wrapper}>
           <Swipeable onSwipedLeft={() => this.changeItem('next')} onSwipedRight={() => this.changeItem('prev')}>
             <div className={styles.items} ref={this.items}>
-              {this.renderPortfolioItems()}
+              {this.renderProjects()}
             </div>
           </Swipeable>
         </div>
@@ -97,7 +97,7 @@ export default() => {
   const data = useStaticQuery(
     graphql`
       query {
-        allPortfolioYaml {
+        allProjectsYaml {
           nodes {
             title
             url
@@ -109,8 +109,8 @@ export default() => {
   );
   return (
     <div className={styles.content}>
-      <Heading>Portfolio</Heading>
-      <PortfolioCarousel items={data.allPortfolioYaml.nodes} />
+      <Heading>Projects</Heading>
+      <Projects items={data.allProjectsYaml.nodes} />
     </div>
   );
 }
