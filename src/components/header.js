@@ -7,7 +7,7 @@ import styles from "../styles/header.module.scss";
 export default({children}) => (
   <>
     <header className={styles.header}>
-      <Link href="/#home" onClick={closeMenu}>
+      <Link to="/#home" onClick={closeMenu}>
         <img src={logo} className={styles.logo} onLoad={animateLogo} id="logo" alt="Logo" />
       </Link>
       <Menu />

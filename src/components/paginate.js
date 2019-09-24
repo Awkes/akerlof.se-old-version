@@ -40,7 +40,7 @@ class Paginate extends React.Component {
        numbers.push(
          i === this.state.activePage
           ? <span key={i} className={styles.number}>{i}</span>
-          : <a href="#" onClick={e => this.changePage(e, i)} key={i} className={styles.number}>{i}</a>
+          : <a href="/" onClick={e => this.changePage(e, i)} key={i} className={styles.number}>{i}</a>
        );
     }
     return <>{numbers}</>;
