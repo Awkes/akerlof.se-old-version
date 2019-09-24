@@ -1,16 +1,10 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   siteMetadata: {
-    title: `Andreas Åkerlöf - Frontendutvecklare - akerlof.se`,
-    url: `https://www.akerlof.se`,
-    description: `Andreas Åkerlöf's personliga utrymme på internet.
-                  Andreas är en frontendutvecklare som ständigt lär sig mer och mer. 
-                  På den här sidan presenterar Andreas sig själv och många av de alster han utvecklat.`
+    title: `Andreas Åkerlöf - Frontend Developer - akerlof.se`,
+    siteUrl: `http://www.akerlof.se`,
+    description: `Andreas is a frontend developer who learns new stuff on a daily basis.
+                  On this site Andreas presents himself and the stuff he's been working on.
+                  There's also a blog where he shares stories related to his web development.`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
