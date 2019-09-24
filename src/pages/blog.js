@@ -17,7 +17,7 @@ export default ({data}) => (
 );
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     allMarkdownRemark(filter: {fields: {slug: { eq: $slug}}}, limit: 1) {
       nodes {
         frontmatter {
