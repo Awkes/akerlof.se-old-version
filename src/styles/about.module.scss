@@ -11,12 +11,12 @@
     background-image: url('../images/andreas.png');
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 75vw;
+    background-size: 60vw;
    }
   .content,.parent::after { width: 35vw; }
 }
 
 @media(min-width: 992px) {
-  .parent { background-size: 65vw; }
+  .parent { background-size: 45vw; }
   .content,.parent::after { width: 45vw; }
 }
