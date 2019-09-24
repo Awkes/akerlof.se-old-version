@@ -20,9 +20,9 @@ export default() => (
   <div className={styles.menu}>
     <input id="burger" type="checkbox" className={styles.burger} />
     <label htmlFor="burger" className={styles.burgerLines}>
-      <div className={styles.burgerLine}></div>
-      <div className={styles.burgerLine}></div>
-      <div className={styles.burgerLine}></div>
+      <span className={styles.burgerLine}></span>
+      <span className={styles.burgerLine}></span>
+      <span className={styles.burgerLine}></span>
     </label>
     
     <Nav onClick={closeMenu} />
