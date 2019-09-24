@@ -10,15 +10,23 @@ export default ({data}) => (
     <Post 
       parentId="post"
       parentClassName={stylesPost.parent}
-      postData={data}
+      title = {data.allMarkdownRemark.nodes[0].frontmatter.title}
+      date = {data.allMarkdownRemark.nodes[0].frontmatter.date}
+      img = {data.allMarkdownRemark.nodes[0].frontmatter.img}
+      children = {data.allMarkdownRemark.nodes[0].html}
     />
     <Archive parentId="archive" />
   </Layout>
 );
 
+// Om slug är angiven hämtas post med aktuell slug, annars hämtas senaste posten.
 export const query = graphql`
   query($slug: String) {
-    allMarkdownRemark(filter: {fields: {slug: { eq: $slug}}}, limit: 1) {
+    allMarkdownRemark(
+      filter: {fields: {slug: { eq: $slug}}}, 
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 1
+    ) {
       nodes {
         frontmatter {
           date
