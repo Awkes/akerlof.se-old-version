@@ -29,7 +29,7 @@ export default() => {
   );
   return (
     <div className={styles.content}>
-      <Heading>Arkiv</Heading>
+      <Heading>Archive</Heading>
       <Paginate>
         {data.allMarkdownRemark.nodes.map((post, i) => 
           <Link to={post.fields.slug} key={i} className={styles.post}>
