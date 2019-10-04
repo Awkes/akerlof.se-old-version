@@ -14,6 +14,6 @@ Then we got our first assignment, we were handled a design that we on our own we
 to HTML, CSS and JavaScript. We were free to do it however we wanted and I decided to go with Gatsby since
 the last project I did (this website) was made with Gatsby and I wanted to continue working on my Gatsby skills.
 
-Now at the end of the week we kind of finnished the first part of our project and after the weekend we're gonna present the result to our supervisors then we're supposed to continue building on this project.
+We've been working on the project the whole week, and now at the end of the week, we kind of finnished the first part of our project. After the weekend we're gonna present the result to our supervisors then we're supposed to continue building on this project.
 
 Apart from working on the project, we've also had a few follow up meetings, a 1-on-1 meeting with my supervisor and a lecture in basic git.
