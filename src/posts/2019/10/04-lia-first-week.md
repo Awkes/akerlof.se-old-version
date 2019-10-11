@@ -1,6 +1,6 @@
 ---
 title: "First week @ We ahead"
-date: "2019-10-04"
+date: "2019-10-04 - 14:30"
 img:  "/images/blog/octopus.png"
 ---
 
