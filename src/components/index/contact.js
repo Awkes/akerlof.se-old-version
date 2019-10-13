@@ -107,7 +107,7 @@ class Form extends React.Component {
         <button 
           className={styles.btn}
           disabled={!(this.state.valid.name && this.state.valid.email && this.state.valid.msg)}
-          children="Skicka"
+          children="Send"
         />
         <FormErrors errors={this.state.error}/>
       </form>
