@@ -117,7 +117,7 @@ class Form extends React.Component {
 
 export default() => (
   <div className={styles.content}>
-    <Heading>Kontakt</Heading>
+    <Heading>Contact</Heading>
     <div className={styles.contact}>
       <Form />
       <VisibilitySensor once>
