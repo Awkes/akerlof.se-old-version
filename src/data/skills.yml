@@ -22,12 +22,14 @@
    
 - skill : React
   img   : images/skills/react.svg
-  text  : Recently i've started to learn React. The plan is to be a great React developer in the future.
+  text  : I've used React with Gatsby to build this site and I've used it in multiple other projects.
+          Together with Gatsby it's probably one of my strongest skills right now.
  
 - skill : Gatsby
   img   : images/skills/gatsby.svg
   text  : This site is built with Gatsby. I built it with Gatsby to both learn the Gatsby framework
-          and to learn more React.
+          and to learn more React. I've built some other projects using Gatsby too, and it's probably
+          one of my strongest skills right now.
   
 - skill : Jekyll
   img   : images/skills/jekyll.svg
@@ -50,7 +52,7 @@
 
 - skill : Adobe Illustrator
   img   : images/skills/adobeillustrator.svg
-  text  : I know how to handle Adobe Illustrator. Not as good as Photoshop though.
+  text  : I know how to handle Adobe Illustrator and create basic stuff.
 
 - skill : Adobe XD
   img   : images/skills/adobexd.svg
@@ -63,8 +65,24 @@
 
 - skill : Git
   img   : images/skills/git.svg
-  text  : I started using Git as soon as I started to study frontend developement and I'm using it on a daily basis.
+  text  : I'm using git on a daily basis.
 
 - skill : GitHub
   img   : images/skills/github.svg
-  text  : Git works best with GitHub, so of course I'm experienced in using GitHub as well.
+  text  : I have experience in using GitHub.
+
+- skill : GitLab
+  img   : images/skills/gitlab.svg
+  text  : I have experience in using GitLab.
+
+- skill : Svelte
+  img   : images/skills/svelte.svg
+  text  : I have experience in Svelte.
+
+- skill : Firebase
+  img   : images/skills/firebase.svg
+  text  : I've used Firebase with Firestore and Authentication.
+
+- skill : Wordpress
+  img   : images/skills/wordpress.svg
+  text  : I have some experience in using wordpress. I prefer using it as a headless CMS.
