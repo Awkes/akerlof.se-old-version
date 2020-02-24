@@ -1,3 +1,8 @@
+- title : Brewdog Beer Collector
+  url   : https://mad-beer.netlify.com
+  img   : /images/portfolio/beer.jpg
+  text  : A project I made with two classmates in the course JavaScript 4 at Nackademin. The mission was to try out a framework, we built the app using Svelte. It uses an API provided by Brewdog.
+
 - title : Guns N' Roses
   url   : https://jekyll-gnr.netlify.com
   img   : /images/portfolio/gnr.jpg

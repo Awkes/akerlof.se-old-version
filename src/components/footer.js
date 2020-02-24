@@ -7,7 +7,7 @@ export default({children}) => (
     <Nav className={styles.nav} />
 
     <div>
-      Copyright &copy; Andreas Åkerlöf 2019
+      Copyright &copy; Andreas Åkerlöf 2019-2020
     </div>
   </footer>
 );
